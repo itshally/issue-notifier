@@ -1,6 +1,6 @@
 # Issue Notifier
 Hello All 
-So in this #githubactionhackathon we are submiting  **Issue Notifier**
+So in this #githubactionhackathon we are submitting  **Issue Notifier**
 Creating your own Issue Notifier is our first entry for the Github Actions Hackathon. It notifies the owner of the repository on Slack when someone submits/opens an issue. In addition, this project can help the maintainers to track issues that other contributors submitted. Thus, this creates more interaction for an open-source projects.
 
 * Prequisities for running this project 
