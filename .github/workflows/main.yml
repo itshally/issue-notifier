@@ -43,7 +43,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "*By:* ${{ github.event.issue.user.login }} \n\n *Issue Title:* ${{ github.event.issue.title }} \n\n *Issue Label:* ${{ github.event.labels['name'] }} \n\n *Message:* \n ${{ github.event.issue.body }}"
+                  "text": "*By:* ${{ github.event.issue.user.login }} \n\n *Issue Title:* ${{ github.event.issue.title }} \n\n *Message:* \n ${{ github.event.issue.body }}"
                 },
                 "accessory": {
                   "type": "image",
@@ -62,7 +62,7 @@ jobs:
                       "emoji": true
                     },
                     "value": "click_me_123",
-                    "url": ${{ github.event.issues.repository_url}}" 
+                    "url": "${{ github.event.issue.url}}" 
                   }
                 ]
               }
