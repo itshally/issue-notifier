@@ -1,0 +1,69 @@
+name: Slack Issue Notifier
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  issueNotifier:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set COMMIT_MESSAGE
+        run: echo ::set-env name=COMMIT_MESSAGE::$(echo "${{ github.event.head_commit.message }}" | tr '\n' ' ')
+      - name: Slack Notification on SUCCESS
+        if: success()
+        uses: tokorom/action-slack-incoming-webhook@master
+        env:
+          INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          text: Successfully automated deployment.
+          blocks: |
+            [
+              {
+                "type": "header",
+                "text": {
+                  "type": "plain_text",
+                  "text": "New OPEN issue!",
+                  "emoji": true
+                }
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "Hey there :wave:, there is a new opened issue for you to check at ${{ github.event.issue.repository_url}}.\n Here are the details:"
+                }
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "section",
+                "text": {
+                  "type": "mrkdwn",
+                  "text": "*By:* ${{ github.event.issue.user.login }} \n\n *Issue Title:* ${{ github.event.issue.title }} \n\n *Issue Label:* ${{ github.event.labels['name'] }} \n\n *Message:* \n ${{ github.event.issue.body }}"
+                },
+                "accessory": {
+                  "type": "image",
+                  "image_url": "${{ github.event.issue.user.avatar_url }}",
+                  "alt_text": "issue sender"
+                }
+              },
+              {
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "View Issue",
+                      "emoji": true
+                    },
+                    "value": "click_me_123",
+                    "url": "${{ github.event.issue.url }}"
+                  }
+                ]
+              }
+            ]

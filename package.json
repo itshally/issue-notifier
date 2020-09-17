@@ -1,0 +1,20 @@
+{
+  "name": "issue-notifier",
+  "version": "1.0.0",
+  "description": "An issue notifier for slack channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itshally/issue-notifier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itshally/issue-notifier/issues"
+  },
+  "homepage": "https://github.com/itshally/issue-notifier#readme"
+}
