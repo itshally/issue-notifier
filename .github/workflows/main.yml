@@ -62,7 +62,7 @@ jobs:
                       "emoji": true
                     },
                     "value": "click_me_123",
-                    "url": "${{ github.event.issue.url}}" 
+                    "url": "${{ github.event.issue.html_url}}" 
                   }
                 ]
               }
