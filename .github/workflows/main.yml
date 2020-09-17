@@ -33,7 +33,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "Hey there :wave:, there is a new opened issue for you to check at ${{ github.event.issue.repository_url}}.\n Here are the details:"
+                  "text": "Hey there :wave:, there is a new open issue for you to check.\n Here are the details:"
                 }
               },
               {
@@ -62,7 +62,7 @@ jobs:
                       "emoji": true
                     },
                     "value": "click_me_123",
-                    "url": "${{ github.event.issue.html_url}}" 
+                    "url": "${{ github.event.issue.html_url }}" 
                   }
                 ]
               }
