@@ -58,11 +58,11 @@ jobs:
                     "type": "button",
                     "text": {
                       "type": "plain_text",
-                      "text": "View Issue",
+                      "text": "View Issues",
                       "emoji": true
                     },
                     "value": "click_me_123",
-                    "url": "${{ github.issue.url }}" 
+                    "url": ${{ github.event.issue.repository_url}}" 
                   }
                 ]
               }
