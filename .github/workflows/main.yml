@@ -33,7 +33,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "Hey there :wave:, there is a new open issue for you to check.\n Here are the details:"
+                  "text": "Hey there :wave:, there is a new open issue for you to check. Here are the details:"
                 }
               },
               {
@@ -43,7 +43,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "*By:* ${{ github.event.issue.user.login }} \n\n *Issue Title:* ${{ github.event.issue.title }} \n\n *Message:* \n ${{ github.event.issue.body }}"
+                  "text": "*By:* ${{ github.event.issue.user.login }} \n\n*Issue Title:* ${{ github.event.issue.title }} \n\n*Message:* \n ${{ github.event.issue.body }} \n\n"
                 },
                 "accessory": {
                   "type": "image",
