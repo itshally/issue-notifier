@@ -8,9 +8,8 @@ Creating your own Issue Notifier is our first entry for the Github Actions Hacka
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/h414xoqwd46fviq8s7rp.JPG)
 
 Here is an examples of what we created and you can see what we are geeting in our slack channel:
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ivfqpgvr353kbnamg8e8.JPG)
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/1czkc6msagfo87ccszas.png)
-
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/jod1b8lov29c94o7idti.png)
+![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/p8zzq291as648r1yetl7.png)
 # Submission Category:
 
 It could fall on Maintainer Must-Haves, but I guess it is good under Wacky Wildcards-hally
